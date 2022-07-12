@@ -21,9 +21,21 @@ const spock = () => {
 }
 
 const Player = () => {
+  const Button = styled.button `
+  `;
   return (
     <div className="page1">
-      
+      <div>
+        <Button>${}</Button>
+      </div>
+      <div>
+        <Button>${}</Button>
+        <Button>${}</Button>
+      </div>
+      <div>
+        <Button>${}</Button>
+        <Button>${}</Button>
+      </div>
     </div>
   );
 }

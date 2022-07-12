@@ -17,3 +17,13 @@ const lizard = () => {
 const spock = () => {
   return 'spock';
 }
+
+const Player = () => {
+  return (
+    <div className="page1">
+      
+    </div>
+  );
+}
+ 
+export default Player;

@@ -12,9 +12,9 @@ import icon_spock from '../../images/icon-spock.png';
 const GamePlay = () => {
 	// we need the player choice
 	let player_choice = '';
+	const button = document.createElement('button');
 
 	function rock () {
-		const button = document.createElement('button');
 		const icon = document.createElement('img');
 		icon.setAttribute('src', icon_rock)
 		button.appendChild(icon);
@@ -25,8 +25,7 @@ const GamePlay = () => {
 		})
 	}
 
-	function paper () {
-		const button = document.createElement('button');
+	function paper (button) {
 		const icon = document.createElement('img');
 		icon.setAttribute('src', icon_paper)
 		button.appendChild(icon);
@@ -37,8 +36,7 @@ const GamePlay = () => {
 		})
 	}
 
-	function scissor () {
-		const button = document.createElement('button');
+	function scissor (button) {
 		const icon = document.createElement('img');
 		icon.setAttribute('src', icon_scissor)
 		button.appendChild(icon);
@@ -49,8 +47,7 @@ const GamePlay = () => {
 		})
 	}
 
-	function spock () {
-		const button = document.createElement('button');
+	function spock (button) {
 		const icon = document.createElement('img');
 		icon.setAttribute('src', icon_spock)
 		button.appendChild(icon);
@@ -61,8 +58,7 @@ const GamePlay = () => {
 		})
 	}
 
-	function lizard () {
-		const button = document.createElement('button');
+	function lizard (button) {
 		const icon = document.createElement('img');
 		icon.setAttribute('src', icon_lizard)
 		button.appendChild(icon);

@@ -61,6 +61,18 @@ const GamePlay = () => {
 		})
 	}
 
+	function lizard () {
+		const button = document.createElement('button');
+		const icon = document.createElement('img');
+		icon.setAttribute('src', icon_lizard)
+		button.appendChild(icon);
+
+		button.addEventListener('click', (e) => {
+			e.preventDefault();
+			return player_choice = 'lizard';
+		})
+	}
+
 }
  
 export default GamePlay;

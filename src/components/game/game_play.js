@@ -25,6 +25,18 @@ const GamePlay = () => {
 		})
 	}
 
+	function paper () {
+		const button = document.createElement('button');
+		const icon = document.createElement('img');
+		icon.setAttribute('src', icon_paper)
+		button.appendChild(icon);
+
+		button.addEventListener('click', (e) => {
+			e.preventDefault();
+			return player_choice = 'paper';
+		})
+	}
+
 
 }
  

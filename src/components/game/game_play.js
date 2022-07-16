@@ -49,6 +49,17 @@ const GamePlay = () => {
 		})
 	}
 
+	function spock () {
+		const button = document.createElement('button');
+		const icon = document.createElement('img');
+		icon.setAttribute('src', icon_spock)
+		button.appendChild(icon);
+
+		button.addEventListener('click', (e) => {
+			e.preventDefault();
+			return player_choice = 'spock';
+		})
+	}
 
 }
  

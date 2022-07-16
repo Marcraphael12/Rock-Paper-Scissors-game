@@ -11,6 +11,20 @@ import icon_spock from '../../images/icon-spock.png';
 
 const GamePlay = () => {
 	// we need the player choice
+	let player_choice = '';
+
+	function rock () {
+		const button = document.createElement('button');
+		const icon = document.createElement('img');
+		icon.setAttribute('src', icon_rock)
+		button.appendChild(icon);
+
+		button.addEventListener('click', (e) => {
+			e.preventDefault();
+			return player_choice = 'rock';
+		})
+	}
+
 
 }
  

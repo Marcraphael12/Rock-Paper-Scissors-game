@@ -4,34 +4,34 @@ const scissors_btn = document.querySelector('.scissor');
 const lizard_btn = document.querySelector('.lizard');
 const spock_btn = document.querySelector('.spock');
 
-const all_buttons = [rock_btn, paper_btn, scissors_btn, lizard_btn, spock_btn];
+const player_choice = [];
 
 rock_btn.addEventListener('click', () => {
 	preventDefault();
 	console.log('rock');
-	return 'rock';
+	player_choice.push('rock');
 })
 
 paper_btn.addEventListener('click', () => {
 	preventDefault();
 	console.log('paper');
-	return 'paper';
+	player_choice.push('paper');
 })
 
 scissors_btn.addEventListener('click', () => {
 	preventDefault();
 	console.log('scissors');
-	return 'scissors';
+	player_choice.push('scissors');
 })
 
 lizard_btn.addEventListener('click', () => {
 	preventDefault();
 	console.log('lizard');
-	return 'lizard';
+	player_choice.push('lizard');
 })
 
 spock_btn.addEventListener('click', () => {
 	preventDefault();
 	console.log('spock');
-	return 'spock';
+	player_choice.push('spock');
 })

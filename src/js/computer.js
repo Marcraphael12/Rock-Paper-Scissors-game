@@ -6,18 +6,26 @@ import icon_spock from '../images/icon_spock.png';
 
 const ComputerChoice = () => {
 	const computerChoice = Math.floor(Math.random() * 4);
+	const computer_button = document.createElement('button');
+	const icon = document.createElement('img');
 	if (computerChoice === 0) {
-		return 'rock';
+		icon.src = icon_rock;
+		computer_button.classList.add('rock');
 	} else if (computerChoice === 1) {
-		return 'paper';
+		icon.src = icon_paper;
+		computer_button.classList.add('paper');
 	} else if (computerChoice === 2) {
-		return 'scissors';
+		icon.src = icon_scissors;
+		computer_button.classList.add('scissor');
 	} else if (computerChoice === 3) {
-		return 'lizard';
+		icon.src = icon_lizard;
+		computer_button.classList.add('lizard');
 	} else {
-		return 'spock';
+		icon.src = icon_spock;
+		computer_button.classList.add('spock');
 	}
-	return computerChoice;
+	computer_button.appendChild(icon);
+	return computer_button;
 }
 
 console.log(ComputerChoice());

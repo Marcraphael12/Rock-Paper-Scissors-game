@@ -93,7 +93,7 @@ main {
       &:nth-child(1) {
         justify-content: center;
 
-        >button {
+        >.scissor {
           border: solid 10px #eca51cff;
         }
       }
@@ -101,28 +101,24 @@ main {
       &:nth-child(2) {
         justify-content: space-between;
 
-        >button {
-          &:nth-child(1) {
-            border: solid 10px #46b9ceff;
-          }
+        >.spock {
+          border: solid 10px #46b9ceff;
+        }
 
-          &:nth-child(2) {
-            border: solid 10px #4d69f8ff;
-          }
+        >.paper {
+          border: solid 10px #4d69f8ff;
         }
       }
 
       &:nth-child(3) {
         justify-content: space-around;
+        
+        >.lizard {
+          border: solid 10px #8756e5ff;
+        }
 
-        >button {
-          &:nth-child(1) {
-            border: solid 10px #8756e5ff;
-          }
-
-          &:nth-child(2) {
-            border: solid 10px #de3755ff;
-          }
+        >.rock {
+          border: solid 10px #de3755ff;
         }
       }
     }

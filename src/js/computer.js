@@ -1,3 +1,9 @@
+import icon_rock from '../images/icon_rock.png';
+import icon_paper from '../images/icon_paper.png';
+import icon_scissors from '../images/icon_scissors.png';
+import icon_lizard from '../images/icon_lizard.png';
+import icon_spock from '../images/icon_spock.png';
+
 const ComputerChoice = () => {
 	const computerChoice = Math.floor(Math.random() * 4);
 	if (computerChoice === 0) {

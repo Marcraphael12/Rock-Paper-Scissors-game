@@ -28,4 +28,4 @@ const ComputerChoice = () => {
 	return computer_button;
 }
 
-console.log(ComputerChoice());
+export default ComputerChoice;

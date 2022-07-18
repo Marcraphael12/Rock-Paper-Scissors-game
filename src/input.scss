@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 body {
@@ -28,8 +28,29 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    border-radius: 5px; 
+
+    &:nth-child(2) {
+      background: #fafafaff;
+      padding: 5px 10px;
+    }
     >img {
       width: 50px;
+    }
+
+    >h1 {
+      color: hsl(229, 64%, 46%);
+      font-weight: 600;
+      font-size: 10px;
+      margin-bottom: 5px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    >span {
+      font-size: 28px;
+      font-weight: 700;
     }
   }
 }

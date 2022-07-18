@@ -7,6 +7,7 @@ import icon_spock from '../images/icon_spock.png';
 const ComputerChoice = () => {
 	const computerChoice = Math.floor(Math.random() * 4);
 	const computer_button = document.createElement('button');
+	computer_button.setAttribute('disabled', 'disabled');
 	const icon = document.createElement('img');
 	if (computerChoice === 0) {
 		icon.src = icon_rock;

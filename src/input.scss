@@ -74,6 +74,14 @@ main {
       align-items: center;
       margin-bottom: 30px;
 
+      >button {
+
+        >img {
+          width: 50px;
+          height: 60px;
+        }
+      }
+
       &:nth-child(1) {
         justify-content: center;
       }

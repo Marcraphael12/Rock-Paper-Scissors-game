@@ -57,7 +57,7 @@ header {
 
 main {
   width: 100%;
-  max-width: 480px;
+  max-width: 320px;
   height: auto;
   display: flex;
 
@@ -75,23 +75,50 @@ main {
       margin-bottom: 40px;
 
       >button {
+        padding: 20px 25px;
+        border-radius: 50%;
+        box-shadow: 0 6px 5px -3px rgba(0, 0, 0, 0.741) inset;
 
         >img {
-          width: 50px;
-          height: 60px;
+          width: 20px;
+          height: 30px;
         }
       }
 
       &:nth-child(1) {
         justify-content: center;
+
+        >button {
+          border: solid 10px #eca51cff;
+        }
       }
 
       &:nth-child(2) {
         justify-content: space-between;
+
+        >button {
+          &:nth-child(1) {
+            border: solid 10px #46b9ceff;
+          }
+
+          &:nth-child(2) {
+            border: solid 10px #4d69f8ff;
+          }
+        }
       }
 
       &:nth-child(3) {
         justify-content: space-around;
+
+        >button {
+          &:nth-child(1) {
+            border: solid 10px #8756e5ff;
+          }
+
+          &:nth-child(2) {
+            border: solid 10px #de3755ff;
+          }
+        }
       }
     }
   }

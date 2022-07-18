@@ -132,4 +132,31 @@ footer {
   width: 100%;
   max-width: 600px;
   height: auto;
+
+  >button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid hsl(217, 16%, 45%);
+    color: rgb(213, 213, 213);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: hsl(217, 16%, 45%);
+      color: #fff;
+    }
+  }
+
+  >.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+
+    >a {
+      color: hsl(230, 8%, 72%); 
+    }
+  }
 }
